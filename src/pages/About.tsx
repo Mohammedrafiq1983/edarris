@@ -176,7 +176,7 @@ const About: React.FC = () => {
               </p>
               
               <p className="text-lg leading-relaxed">
-                As we continue to grow, our focus remains on building lasting partnerships with our clients, 
+                We're the best on our region, our focus remains on building lasting partnerships with our clients, 
                 understanding their evolving needs, and providing solutions that help them succeed in an 
                 increasingly competitive marketplace.
               </p>

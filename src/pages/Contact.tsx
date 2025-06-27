@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: t('contact.info.phone'),
-      content: '+964 (0) 1234 5678\n+964 (0) 9876 5432',
+      content: '+964 (0) 7702192425\n+964 (0) 7702192425',
       color: 'text-green-600',
     },
     {
@@ -149,7 +149,7 @@ const Contact: React.FC = () => {
                     <div className="text-center text-gray-500">
                       <MapPin className="w-12 h-12 mx-auto mb-2" />
                       <p>Interactive Map</p>
-                      <p className="text-sm">Baghdad, Iraq</p>
+                      <p className="text-sm">Erbil, Iraq</p>
                     </div>
                   </div>
                 </CardContent>
