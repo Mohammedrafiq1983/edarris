@@ -13,9 +13,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">eD</span>
-              </div>
+              <img src="/images/icon.ico" alt="eDarris Logo" className="w-12 h-12 rounded-lg" />
               <div>
                 <h3 className="text-xl font-bold">eDarris</h3>
                 <p className="text-gray-400 text-sm">Office & Education Supplies</p>
@@ -46,22 +44,22 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li>
+              <li className="text-right">
                 <Link to="/" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.home')}
                 </Link>
               </li>
-              <li>
+              <li className="text-right">
                 <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.about')}
                 </Link>
               </li>
-              <li>
+              <li className="text-right">
                 <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.contact')}
                 </Link>
               </li>
-              <li>
+              <li className="text-right">
                 <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
                   {t('nav.quote')}
                 </Link>
@@ -71,19 +69,19 @@ const Footer: React.FC = () => {
           
           {/* Product Categories */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Our Products</h4>
+            <h4 className="text-lg font-semibold mb-4 text-right">Our Products</h4>
             <ul className="space-y-2">
-              <li className="text-gray-400">{t('products.office.title')}</li>
-              <li className="text-gray-400">{t('products.education.title')}</li>
-              <li className="text-gray-400">{t('products.printshop.title')}</li>
-              <li className="text-gray-400">{t('products.packaging.title')}</li>
+              <li className="text-gray-400 text-right">{t('products.office.title')}</li>
+              <li className="text-gray-400 text-right">{t('products.education.title')}</li>
+              <li className="text-gray-400 text-right">{t('products.printshop.title')}</li>
+              <li className="text-gray-400 text-right">{t('products.packaging.title')}</li>
             </ul>
           </div>
         </div>
         
         {/* Social Media & Copyright */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex space-x-4 mb-4 md:mb-0">
+          <div className="flex space-x-4 rtl:space-x-reverse mb-4 md:mb-0">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">
               <Facebook className="w-5 h-5" />
             </a>
@@ -97,7 +95,7 @@ const Footer: React.FC = () => {
               <Linkedin className="w-5 h-5" />
             </a>
           </div>
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-sm text-right">
             © 2025 eDarris Office & Education Supplies. All rights reserved.
           </p>
         </div>

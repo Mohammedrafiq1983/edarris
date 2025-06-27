@@ -63,50 +63,6 @@
     scroll-behavior: smooth;
   }
   
-  /* RTL support for Arabic */
-  [dir="rtl"] {
-    text-align: right;
-  }
-  
-  [dir="rtl"] .flex {
-    flex-direction: row-reverse;
-  }
-  
-  /* Explicit RTL overrides using html.rtl class */
-  html.rtl {
-    text-align: right;
-  }
-
-  html.rtl .text-left {
-    text-align: right;
-  }
-
-  html.rtl .text-right {
-    text-align: left;
-  }
-
-  html.rtl .ml-auto {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-  }
-
-  html.rtl .mr-auto {
-    margin-right: 0 !important;
-    margin-left: auto !important;
-  }
-
-  html.rtl .ml-2 {
-    margin-left: 0 !important;
-    margin-right: 0.5rem !important; /* Equivalent to Tailwind's ml-2 */
-  }
-
-  html.rtl .mr-2 {
-    margin-right: 0 !important;
-    margin-left: 0.5rem !important; /* Equivalent to Tailwind's mr-2 */
-  }
-  
-  /* Add more specific overrides for other spacing/positioning as needed */
-
   /* Image optimization */
   img {
     object-position: center;

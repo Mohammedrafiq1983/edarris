@@ -31,9 +31,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">eD</span>
-            </div>
+            <img src="/images/icon.ico" alt="eDarris Logo" className="w-10 h-10 rounded-lg" />
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-gray-900">eDarris</h1>
               <p className="text-sm text-gray-600">{language === 'en' ? 'Office & Education Supplies' : 'مستلزمات المكاتب والتعليم'}</p>
@@ -41,7 +39,7 @@ const Header: React.FC = () => {
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
             {navigation.map((item) => (
               <Link
                 key={item.href}
@@ -58,11 +56,11 @@ const Header: React.FC = () => {
           </nav>
           
           {/* Right Side - Quote Button + Language Selector */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 rtl:space-x-reverse">
             {/* Language Selector */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="sm" className="flex items-center space-x-2">
+                <Button variant="outline" size="sm" className="flex items-center space-x-2 rtl:space-x-reverse">
                   <Globe className="w-4 h-4" />
                   <span className="hidden sm:inline">{language === 'en' ? 'EN' : 'عربي'}</span>
                 </Button>
