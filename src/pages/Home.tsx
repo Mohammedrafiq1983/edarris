@@ -82,7 +82,7 @@ const Home: React.FC = () => {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary">
+                <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
                   {t('hero.contact')}
                 </Button>
               </Link>
@@ -174,7 +174,7 @@ const Home: React.FC = () => {
               </Button>
             </Link>
             <Link to="/about">
-              <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-black hover:bg-white hover:text-primary">
                 {t('nav.about')}
               </Button>
             </Link>

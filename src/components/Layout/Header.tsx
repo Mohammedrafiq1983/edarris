@@ -64,7 +64,7 @@ const Header: React.FC = () => {
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" size="sm" className="flex items-center space-x-2">
                   <Globe className="w-4 h-4" />
-                  <span className="hidden sm:inline">{language === 'en' ? 'EN' : 'عر'}</span>
+                  <span className="hidden sm:inline">{language === 'en' ? 'EN' : 'عربي'}</span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">

@@ -10,6 +10,9 @@ lerna-debug.log*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+!public/
+!public/**
+
 # Runtime data
 pids
 *.pid
@@ -89,9 +92,7 @@ dist
 # Docusaurus build output
 .docusaurus
 
-# Gatsby build output
-.cache/
-public
+
 
 # vuepress build output
 .vuepress/dist
